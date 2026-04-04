@@ -9,7 +9,8 @@ Operational Features
  * Leak Protection: Implements size-buffered channels for full-duplex stream synchronization, explicitly preventing goroutine "zombie" leaks during asynchronous TCP cancellation or abrupt client disconnects.
  * Kernel-Optimized Transfers: Uses native io.Copy to leverage underlying OS efficiencies (like splice on Linux) for memory-to-memory byte transfers.
  * Cross-Platform: Native cross-compilation support for Windows, Linux, and macOS target architectures.
-Compilation
+   
+Compilation : 
 Compile directly from source. No third-party Go modules are required.
 
 For Linux :
