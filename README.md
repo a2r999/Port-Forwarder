@@ -3,7 +3,8 @@ Port Forwarder
 Author : Abhijit Rekhi
 
 A lightweight, concurrent TCP relay and static port forwarder written in Go. Designed for Red Team operations to facilitate network pivoting and internal tunneling across restricted enclaves without requiring external dependencies or interpreters.
-Operational Features
+
+## Operational Features 
  * Zero Dependencies: Compiles to a single static binary, ensuring execution compatibility across diverse target environments.
  * High Concurrency: Utilizes Go's lightweight goroutines for non-blocking, asynchronous I/O. Capable of handling thousands of concurrent connections with minimal memory overhead.
  * Leak Protection: Implements size-buffered channels for full-duplex stream synchronization, explicitly preventing goroutine "zombie" leaks during asynchronous TCP cancellation or abrupt client disconnects.
