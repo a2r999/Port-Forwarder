@@ -24,7 +24,7 @@ GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o go-relay.exe relay.go
 ## Usage
 Syntax: ./go-relay <local_bind_port> <target_ip:target_port>
 
-#### Example 1: Basic Forward Tunnel
+## Example 1: Basic Forward Tunnel
 
 Expose an isolated internal database (10.10.10.50:3306) through a compromised dual-homed web server (192.168.1.100).
 
@@ -32,7 +32,7 @@ Execute on the compromised web server: ./go-relay 9999 10.10.10.50:3306
 
 Result: Tooling pointed at 192.168.1.100:9999 will be seamlessly routed to the internal database.
 
-#### Example 2: Double Pivoting 
+## Example 2: Double Pivoting 
 Route exploit traffic through two compromised systems to reach a deeply segregated target enclave.
 1. Hop 2 (Internal Server):
 ./go-relay 8888 <Final_Target_IP>:445
