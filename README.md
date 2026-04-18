@@ -2,7 +2,7 @@ Port Forwarder
 
 Author : Abhijit Rekhi
 
-A lightweight, concurrent TCP relay and static port forwarder written in Go. Designed for Red Team operations to facilitate network pivoting and internal tunneling across restricted enclaves without requiring external dependencies or interpreters.
+A lightweight, concurrent TCP relay and static port forwarder written in Go. Designed for Red Team operations to facilitate network pivoting and internal tunneling across restricted network enclaves without requiring external dependencies or interpreters.
 
 ## Operational Features 
  * Zero Dependencies: Compiles to a single static binary, ensuring execution compatibility across diverse target environments.
