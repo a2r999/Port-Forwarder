@@ -32,7 +32,8 @@ Execute on the compromised web server:
 ./go-relay 9999 10.10.10.50:3306
 
 Result: Tooling pointed at 192.168.1.100:9999 will be seamlessly routed to the internal database.
-Example 2: Double Pivoting (Chained Relays)
+
+Example 2: Double Pivoting (Cha
 Route exploit traffic through two compromised systems to reach a deeply segregated target enclave.
 1. Hop 2 (Internal Server):
 ./go-relay 8888 <Final_Target_IP>:445
